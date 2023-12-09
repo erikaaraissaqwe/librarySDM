@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listBookFragment">
+
+    <fragment
+        android:id="@+id/listBookFragment"
+        android:name="br.edu.ifsp.scl.library.ui.ListBookFragment"
+        android:label="Biblioteca"
+        tools:layout="@layout/fragment_list_book" >
+        <action
+            android:id="@+id/action_listBookFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_listBookFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="br.edu.ifsp.scl.library.ui.RegisterFragment"
+        android:label="Livro novo"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="br.edu.ifsp.scl.library.ui.DetailsFragment"
+        android:label="Detalhes"
+        tools:layout="@layout/fragment_details" />
+</navigation>

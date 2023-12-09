@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="titulo">Título:</string>
+    <string name="isbn">ISBN:</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Deletar</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="library">Biblioteca</string>
+    <string name="livros_cadastrados">Livros Cadastrados</string>
+    <string name="url_da_capa">URL</string>
+</resources>
